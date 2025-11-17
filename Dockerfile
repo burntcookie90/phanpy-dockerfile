@@ -5,7 +5,7 @@ WORKDIR /app
 RUN git clone --depth 1 https://github.com/cheeaun/phanpy.git 
 RUN cd phanpy && npm install && npm run build
 
-FROM nginx:1.25.3-alpine
+FROM nginx:1.29.3-alpine
 LABEL maintainer="Vishnu Rajeevan <docker@vishnu.email>"
 
 WORKDIR /app
